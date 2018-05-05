@@ -1,0 +1,49 @@
+1 set nocompatible              " be iMproved, required
+2 filetype off                  " required
+3
+4 " set the runtime path to include Vundle and initialize
+5 set rtp+=/etc/vim/bundle/Vundle.vim
+6 call vundle#begin()
+7 " alternatively, pass a path where Vundle should install plugins
+8 "call vundle#begin('~/some/path/here')
+9
+10 " let Vundle manage Vundle, required
+11 Plugin 'VundleVim/Vundle.vim'
+12 Plugin 'itchyny/lightline.vim'
+13 Plugin 'scrooloose/nerdtree'
+14 Plugin 'junegunn/fzf'
+15 Plugin 'junegunn/fzf.vim'
+16 Plugin 'danro/rename.vim'
+17 Plugin 'terryma/vim-multiple-cursors'
+18 Plugin 'scrooloose/syntastic'
+19 Plugin 'editorconfig/editorconfig-vim'
+20 Plugin 'airblade/vim-gitgutter'
+21 Plugin 'tpope/vim-surround'
+22 Plugin 'mattn/emmet-vim'
+23
+24 " All of your Plugins must be added before the following line
+25 call vundle#end()            " required
+26 filetype plugin indent on    " required
+27 " To ignore plugin indent changes, instead use:
+28 "filetype plugin on
+29
+30 set number "show line numbers
+31 "set relativenumber
+32 set smartindent
+33 set tabstop=4
+34 set shiftwidth=4
+35 set expandtab
+36 set laststatus=2
+37
+38 if !has('gui_running')
+39 set t_Co=256
+40 endif
+41
+42 "let g:lightline = {
+43 "      \ 'colorscheme': 'powerline',
+44 "      \ }
+45 " Resorces
+46 "
+47 " https://github.com/VundleVim/Vundle.vim
+48 " https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9\n"
+49 "
